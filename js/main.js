@@ -1,11 +1,11 @@
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-  } else {
-    toTop.classList.remove("active");
-  }
+	if (window.pageYOffset > 100) {
+		toTop.classList.add("active");
+	} else {
+		toTop.classList.remove("active");
+	}
 })
 
 /*parallax =====================*/
@@ -23,34 +23,34 @@ const sBackLeft = 60;
 const sbacklayerloginLeft = 60;
 const sbacklayerLoginRight = 60;
 
-parallax.addEventListener('mousemove', e=>{
-  const x = e.clientX;
-  const y = e.clientY;
+parallax.addEventListener('mousemove', e => {
+	const x = e.clientX;
+	const y = e.clientY;
 
-  backDown.style.transform = `
+	backDown.style.transform = `
   translate(
   0,
   ${y / sBackDown}%
   )`;
 
-  backLeft.style.transform = `
+	backLeft.style.transform = `
   translate(
     0,
    -${y / sBackLeft}%
   )`;
 
-  backTop.style.transform = `
+	backTop.style.transform = `
   translate(
   -${x / sBackTop}%
   )`;
-  //login layer
+	//login layer
 
-  backlayerloginLeft.style.transform = `
+	backlayerloginLeft.style.transform = `
   translate(
     0,
    -${y / sbacklayerloginLeft}%
   )`;
-  backlayerLoginRight.style.transform = `
+	backlayerLoginRight.style.transform = `
   translate(
   ${x / sbacklayerLoginRight}%
   )`;
