@@ -116,7 +116,7 @@ body{
     z-index: 1;
 }
 .white__btn{
-    border: 2px white solid;
+    border: 1px white solid;
 }
 .btn{
     color: white;
@@ -140,7 +140,7 @@ body{
     color: white;
     font-weight: 400;
     border-radius: 50px;
-    border: 2px white solid;
+    border: 1px white solid;
 
 }
 .button__login:hover{
@@ -1527,9 +1527,6 @@ input[type="submit"]:hover{
 
 /*adaptaion login.html*/
 @media screen and (max-width: 1556px){
-    .bg__registration{
-        /*height: 100%;*/
-    }
     form .txt_field{
         margin: 30px 0;
     }
