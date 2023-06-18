@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+	const links = document.querySelectorAll('.menu__link, .try-now__view-more');
+
+	links.forEach(link => {
+		link.addEventListener('click', function (e) {
+			e.preventDefault();
+			const href = this.getAttribute('href');
+			const offsetTop = document.querySelector(href).offsetTop;
+
+			scroll({
+				top: offsetTop,
+				behavior: 'smooth'
+			});
+		});
+	});
 	const toTop = document.querySelector(".to-top");
 
 	function handleScroll() {

@@ -30,14 +30,11 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-
-
 }
 
 .header {
 	position: relative;
 	z-index: 5;
-	overflow: hidden;
 	height: 100vh;
 }
 
@@ -379,7 +376,7 @@ body {
 }
 
 .card-style {
-	filter: drop-shadow(3px 6px 30px rgba(0, 0, 0, 0.25));
+	box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.25);
 	background-color: white;
 }
 
