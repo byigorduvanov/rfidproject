@@ -1,5 +1,9 @@
 @import "reset.css";
 
+:root {
+	color-scheme: light dark;
+}
+
 p,
 a,
 ul,
@@ -39,6 +43,8 @@ body {
 }
 
 .bg {
+	-webkit-[css property] -khtml-[css property] -moz-[css property] -ms-[css property];
+
 	background: linear-gradient(67deg, #8175b5, #75c3e1);
 	background-size: 400% 400%;
 
