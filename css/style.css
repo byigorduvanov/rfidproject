@@ -1,7 +1,9 @@
 @import "reset.css";
 
-:root {
-	color-scheme: light dark;
+@media (forced-colors: none) {
+	:root {
+		color-scheme: light;
+	}
 }
 
 p,
@@ -43,8 +45,6 @@ body {
 }
 
 .bg {
-	-webkit-[css property] -khtml-[css property] -moz-[css property] -ms-[css property];
-
 	background: linear-gradient(67deg, #8175b5, #75c3e1);
 	background-size: 400% 400%;
 
@@ -384,6 +384,7 @@ body {
 .card-style {
 	box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.25);
 	background-color: white;
+	color: black;
 }
 
 .how-it-work__block-text__title {
