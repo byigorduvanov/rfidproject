@@ -1,3 +1,9 @@
+if (navigator.userAgent.match(/samsung/i)) {
+	alert("Ваш браузер (Samsung Internet) може не показувати цей веб -сайт" +
+		"correctly. Будь ласка, розгляньте можливість використання браузера, сумісного зі стандартами" +
+		". \n\n" +
+		"Ми рекомендуємо Firefox, Microsoft Edge або Google Chrome.");
+}
 document.addEventListener('DOMContentLoaded', (event) => {
 	const links = document.querySelectorAll('.menu__link, .try-now__view-more');
 
