@@ -816,7 +816,6 @@ body {
 /* style burger menu*/
 .btn-menu {
 	color: #fff;
-
 	padding: 7px;
 	position: relative;
 	top: 1%;
@@ -827,7 +826,7 @@ body {
 	height: 20px;
 	transform: translateZ(0);
 	backface-visibility: hidden;
-	z-index: 5;
+	z-index: 6;
 }
 
 .btn-menu span {
@@ -904,6 +903,7 @@ body {
 }
 
 .hidden-menu-ticker:checked~.btn-menu span.first {
+	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	top: 8px;
 }
@@ -913,6 +913,7 @@ body {
 }
 
 .hidden-menu-ticker:checked~.btn-menu span.third {
+	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	top: -4.5px;
 	width: 22px;
